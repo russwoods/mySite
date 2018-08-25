@@ -9,7 +9,20 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
-    <%= yield %>
-  </body>
+<body>
+  <nav>
+    <ul>
+      <li><%= link_to "Home", root_path %></li>
+      <li><%= link_to "About", simple_pages_about_path %></li>
+      <li><%= link_to "Contact", simple_pages_contact_path %></li>
+    </ul>
+  </nav>
+
+<%= yield %>
+
+<footer>
+  &copy; 2018 Bike Berlin
+</footer>
+</body>
+    
 </html>
