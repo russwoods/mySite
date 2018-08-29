@@ -2,11 +2,56 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+// General styles
+* {
+    margin: 0
+}
+
+html, body {
+  height: 100%;
+}
 
 h1 {
-    color: darkslateblue;
+	text-transform: uppercase;
+}
+
+.content {
+  padding-top: 70px;
+  padding-bottom: 50px;
+}
+
+section {
+  text-align: center;
+}
+
+//Nav
+
+.navbar-brand {
+    text-transform: uppercase;
+    padding-left: 10px;
+}
+
+.navbar-nav {
+    padding-right: 20px;
 }
 
 .nav-item {
-    text-align: right;
+  padding: 10px;      
+}
+
+a {
+  color: white;
+}
+  a:hover {
+  color: grey;
+  text-decoration: none;      
+}
+
+//Footer
+
+.site-footer {
+    text-align: center;
+    padding: 10px 0;
+    background: darkgray;
+    
 }
