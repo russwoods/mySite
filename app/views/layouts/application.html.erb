@@ -20,7 +20,7 @@
 <body>
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">Bike Berlin</a>
+  <a class="navbar-brand" href="#">Bike Seattle</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -35,6 +35,9 @@
         <%= link_to "About", simple_pages_about_path %>
       </li>
       <li class="nav-item">
+        <%= link_to "Products", products_path %>
+      </li>        
+      <li class="nav-item">
         <%= link_to "Contact", simple_pages_contact_path %>
       </li>
     </ul>
@@ -44,7 +47,7 @@
 <%= yield %>
 
 <footer class="site-footer text right">
-  &copy; 2018 Bike Berlin
+  &copy; 2018 Bike Seattle
 </footer>
     
 </body>
