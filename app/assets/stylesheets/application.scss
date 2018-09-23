@@ -15,5 +15,39 @@
 
 @import "bootstrap";
 
-//Carousel
+.navbar {
+    border-radius: 0px;
+    padding: 0;
+}
 
+.navbar-brand {
+    padding: 10px 0px 10px 20px;
+    font-size: 2em;
+}
+
+#carousel-images {
+    padding: 10px 20px;
+    margin-bottom: 40px;
+}
+.carousel-caption {
+    color: #000;
+    font-size: 2em;
+}
+
+.carousel-indicators {
+    padding-bottom: 30px;
+    width: 70%;
+}
+
+.carousel-indicators li {
+    width: 80px;
+    border: 2px solid #000;
+    height: 12px;
+    margin: 0px;
+    padding-right: 2px;
+}
+
+.carousel-indicators .active {
+    width: 80px;
+    background-color: #ffd101;
+} 
