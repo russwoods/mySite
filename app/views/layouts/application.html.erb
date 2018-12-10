@@ -20,9 +20,9 @@
 
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">Bike Seattle</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <%= link_to "Bike Seattle", root_path, class: "navbar-brand" %>      
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" ar   controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
@@ -45,7 +45,7 @@
         <%= link_to "Contact", simple_pages_contact_path %>
       </li>
     </ul>
-  </div>
+  </div><!-- end navbar-collapse-->
 </nav>
 
 <%= yield %>
