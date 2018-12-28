@@ -2,6 +2,7 @@
 
 <%= flash[:notice] %>
 
+<div class="container-fluid">
 <%= form_with(url:"/simple_pages/thank_you", method: "post", local: true) do |form| %>
 <div class="row">
   <div class="form-group">
@@ -19,3 +20,5 @@
 </div>
 <%= form.submit "Send", class: "form_label" %>
 <% end %>
+    
+</div>    
