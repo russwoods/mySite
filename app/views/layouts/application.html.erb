@@ -26,8 +26,15 @@
     <span class="navbar-toggler-icon"></span>
   </button>
     
-<p class="notice"><%= notice %></p>
-<p class="alert"><%= alert %></p>    
+
+<% if notice %>
+    <p id="notice" class="alert alert-primary"><%= notice %></p>
+<% end %>
+    
+<% if alert %>
+    <p id="nalert" class="alert alert-primary"><%= alert %></p>
+<% end %>    
+    
     
 <%= form_with(url: products_path, method: 'get', local: true) do |form| %>
   <%= form.label :q, 'Search for:' %>
