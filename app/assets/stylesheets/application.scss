@@ -16,6 +16,9 @@
 
 @import "bootstrap";
 
+
+//Nav
+
 .navbar {
     border-radius: 0px;
     padding: 0;
@@ -24,19 +27,51 @@
 .navbar-brand {
     padding: 10px 0px 10px 20px;
     font-size: 2em;
+    text-transform: uppercase;
 }
 
-#carousel-images {
-    padding: 10px 20px;
-    margin-bottom: 40px;
+.navbar-nav {
+  padding-right: 20px;
 }
+
+.nav-item {
+  padding: 10px;      
+}
+
+nav a {
+  color: #FFF;
+}
+  a:hover {
+  color: #6f6f6f;
+  text-decoration: none;      
+}
+
+.search_form {
+    color: #000;
+}
+//CAROUSEL
+
+.carousel-caption {
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 5px;
+}
+
+.carousel-inner {
+	margin-bottom: 30vh;
+}
+
+.carousel-item img {
+	display: block;
+	margin: 0 auto;
+	width: 80%;
+}
+
 .carousel-caption {
     color: #000;
     font-size: 2em;
 }
 
 .carousel-indicators {
-    padding-bottom: 30px;
     width: 70%;
 }
 
@@ -53,10 +88,25 @@
     background-color: #ffd101;
 } 
 
+.carousel-control-prev-icon,
 .carousel-control-next-icon {
-    background: #212529;
+	background-color: #443e66;
+	opacity: 0.5;
 }
 
-.carousel-control-prev-icon {
-    background: #212529;
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+	background-color: #443e66;
+	opacity: 1;
+}
+
+
+//Footer
+
+.site-footer {
+  text-align: center;
+  padding: 10px 0;
+  background: #818181;
+  bottom: 0;
+  width: 100%;    
 }
