@@ -1,10 +1,8 @@
-
 <article class="container products-show">
 	<h1>Your Product:</h1>
 	<p id="notice"><%= notice %></p>
-	<!-- <div class="row align-items-center ratings-preview"> <p class="col-sm"> <%= @product.highest_rating_comment %> <i class="far fa-star"></i> </p> </div> -->
-	<!-- <strong>Image url:</strong> <%= @product.image_url %> -->
-	<section class="row">
+
+    <section class="row">
 		<div class="col-sm-6 img">
 			<%= image_tag(@product.image_url, class: "img-fluid") %>
 		</div>
@@ -14,6 +12,8 @@
 				<strong>Name:</strong>
 				<%= @product.name %>
 			</p>
+            
+            <div id="average-rating" class="rated" data-score="<%= @product.average_rating %>"></div>
 
 			<p>
 				<strong>Description:</strong>
