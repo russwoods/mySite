@@ -13,7 +13,7 @@
 				<%= @product.name %>
 			</p>
             
-            <div id="average-rating" class="rated" data-score="<%= @product.average_rating %>"></div>
+
 
 			<p>
 				<strong>Description:</strong>
@@ -34,11 +34,9 @@
                 <%= render partial: "devise/shared/stripe_checkout_button" %>
                 <% end %>
             <div>
-                <%= render 'new_comment' %><%= render 'comments' %>
+
             </div>
-            <p>
-                <%= will_paginate @comments %>
-            </p>    
+
 			<p>
 				<%= link_to 'Edit', edit_product_path(@product) %>
 				|
