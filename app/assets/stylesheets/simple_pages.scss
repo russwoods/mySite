@@ -9,7 +9,7 @@ h1 {
   text-align: center;
 }
 
-h2, h3, h4 {
+h2 {
     text-align: center;
 }
 
@@ -26,6 +26,28 @@ section {
 }
 
 
+//Nav
+
+.navbar-brand {
+  text-transform: uppercase;
+}
+
+.navbar-nav {
+  padding-right: 20px;
+}
+
+.nav-item {
+  padding: 10px;      
+}
+
+nav a {
+  color: #FFF;
+}
+  a:hover {
+  color: #6f6f6f;
+  text-decoration: none;      
+}
+
 //About
 
 .about-header {
@@ -36,25 +58,16 @@ section {
     line-height: 2.0em;
 }
 
-
 //Contact
 
-//.contact-fields {
-//    text-align: center;
-//}
+.contact-fields {
+    text-align: center;
+}
 
-.contact-form form {
-	margin: 0 auto;
-	text-align: center;
-	width: 60%;
+//Footer
 
-	& * {
-		margin: 1vh auto;
-		text-align: center;
-		width: 70%;
-	}
-
-	.form_label {
-		margin: 8vh 0;
-	}
+.site-footer {
+  text-align: center;
+  padding: 10px 0;
+  background: #818181;
 }

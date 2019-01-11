@@ -37,7 +37,7 @@
     
     
 <%= form_with(url: products_path, method: 'get', local: true) do |form| %>
-  <div class="search_form"><%= form.label :q, 'Search for:' %></div>
+  <%= form.label :q, 'Search for:' %>
   <%= form.text_field :q, id: 'q', value: params[:q] %>
   <%= form.submit 'Search' %>
 <% end %>
