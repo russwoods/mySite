@@ -1,22 +1,20 @@
-</article>
-
 <p id="notice"><%= notice %></p>
 
-  <section class="row">
     <h1>Your Product:</h1>
-    <div class="col-sm-6 img">
-      <%= image_tag(@product.image_url, class: "img-fluid") %>
-    </div>
 
-    <section class="col-sm-6 products-info">
       <p>
         <strong>Name:</strong>
         <%= @product.name %>
       </p>
+
       <p>
         <strong>Description:</strong>
         <%= @product.description %>
       </p>
+
+      <p>
+      <%= image_tag(@product.image_url, class: "img-fluid") %>
+      </p> 
 
       <p>
         <strong>Color:</strong>
@@ -33,7 +31,7 @@
         <%= render partial: "devise/shared/stripe_checkout_button" %>
         <% end %>        
 
-      <p>Average Rating: <div class="rated" data-score="<%= @product.average_rating %>"></div> </p>
+<!--      <p>Average Rating: <div class="rated" data-score="<%= @product.average_rating %>"></div> </p>-->
 
       <p>
         <%= link_to 'Edit', edit_product_path(@product) %> 
@@ -45,4 +43,3 @@
 
     </section>
     <!-- /col-sm-6 -->
-  </section>
