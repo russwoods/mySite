@@ -1,6 +1,8 @@
 class Product < ApplicationRecord
-  validates :name, presence: true    
+  has_many :orders    
   has_many :comments, dependent: :destroy
+    
+  validates :name, presence: true    
     
   def self.search(search_term)
     Product.where("name LIKE ?", "%#{search_term}%")
@@ -13,5 +15,9 @@ class Product < ApplicationRecord
   def highest_rating_comment
     comments.rating_desc.first
   end
+    
+  def lowest_rating_comment
+    comments.rating_asc.first
+  end  
     
 end
