@@ -5,9 +5,13 @@ class ProductsController < ApplicationController
   # GET /products.json
     
   def index
+    logger.debug "getting the search word and displaying corresponding items" 
+    #byebug  
     if params[:q]
       search_term = params[:q]
+      logger.debug "Collected search term: #{search_term}"        
       @products = Product.search(search_term)
+      logger.debug "Displaying corresponding items: #{@products}"
     else
       @products = Product.all
     end
