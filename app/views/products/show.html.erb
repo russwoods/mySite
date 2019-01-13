@@ -2,7 +2,7 @@
 
 <section class="row">
     <div class="col-sm-6 img">
-        <%= image_tag(@product.image_url, class: "img-fluid") %>
+        <%= image_tag(@product.image_url, class: "img-responsive img-zoom", data_zoom_image: "@product.product_image.url") if @product.image_url%>
     </div>    
 
     <section class="col-sm-6 products-info">      
