@@ -7,10 +7,12 @@
 
     <section class="col-sm-6 products-info">      
         <p>Average Rating: <div class="rated" id="average-rating" data-score="<%= @product.average_rating %>"></div> </p>      
+        <% cache @product do %>
         <p>
           <strong>Name:</strong>
           <%= @product.name %>
         </p>
+        <% end %>    
 
         <p>
           <strong>Description:</strong>
