@@ -1,6 +1,6 @@
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
-
+  config.app_generators.javascript_engine = :javascript
   #Dynamic links that show up inside emails from development environment generate the right URLs.
   config.action_mailer.default_url_options = { host: 'localhost:3000' }
     
