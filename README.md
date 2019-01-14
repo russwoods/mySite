@@ -1,3 +1,3 @@
 # README
 
-Welcome. My name is Russ Wodos, and this is my first Rails app. Enjoy!
+Welcome. My name is Russ Woods, and this is my first Rails app. Enjoy!
