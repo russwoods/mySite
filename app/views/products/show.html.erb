@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<section class="row">
+<section class="row" data-product-id="<%= @product.id %>">
     <div class="col-sm-6 img">
         <%= image_tag(@product.image_url, class: "img-responsive img-zoom", data_zoom_image: "@product.product_image.url") if @product.image_url%>
     </div>    
