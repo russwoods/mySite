@@ -10,16 +10,16 @@
 </ol> 
     
 <!-- wrapper for slides -->    
-  <div class="carousel-inner">
-    <% @products.each do |product| %>  
-    <div class="carousel-item<%= " active" if product == @products.first %>">
-        <%= image_tag(product.image_url, class: "img-responsive d-block w-100 scroll-image", id: "carousel-images") %>
+<div class="carousel-inner">
+    <% @products.each do |product| %>
+      <div class="carousel-item<%= " active" if product == @products.first %>">
+        <%= link_to image_tag(product.image_url, class: "img-responsive container d-block w-100"), product unless product.image_url.nil? %>
         <div class="carousel-caption d-none d-md-block">
-          <%= product.name %>
+          <%= link_to product.name, product %>
         </div>
       </div>
-    <% end %>        
-  </div>
+    <% end %>
+  </div><!-- /carousel-inner-->
 
 <!-- controls -->
   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
