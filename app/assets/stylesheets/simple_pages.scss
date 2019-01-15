@@ -5,8 +5,9 @@
 // General styles
 
 h1 {
-  text-transform: uppercase;
   text-align: center;
+	font-size: 2em;
+	margin: 30px 0px;
 }
 
 h2 {
@@ -54,8 +55,9 @@ nav a {
     line-height: 2.0em;
 }
 
-.about-paragraph {
-    line-height: 2.0em;
+.about-text {
+	padding-top: 25px;
+  line-height: 3.0em;
 }
 
 //Contact
