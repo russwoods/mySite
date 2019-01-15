@@ -6,6 +6,13 @@
     color: #000;
 }
 
+#product_frame {
+  border: solid 1px #000;
+  border-radius: 5px;
+  margin: 20px;
+	padding: 20px;
+}
+
 .pagination  {
 	justify-content: center;
 
@@ -13,3 +20,4 @@
 		padding: 1vw 0.5vw;
 	}
 }
+

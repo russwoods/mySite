@@ -25,7 +25,7 @@
       <%= form.submit 'Search', class: "btn btn-outline-success my-2 my-sm-0" %>
     <% end %>
     <ul class="navbar-nav ml-auto">
-      <li class="nav-item active">
+      <li class="nav-item">
         <%= link_to "Home", root_path, class: "nav-link" %>
       </li>
       <li class="nav-item">
@@ -50,8 +50,8 @@
         </li>
       <% end %>    
     </ul>
-  </div><!-- end navbar-collapse-->   
-</nav>
+  </div><!-- /navbar-collapse-->   
+</nav><!-- /navbar--> 
 
 <% if notice %>
     <p id="notice" class="alert alert-primary"><%= notice %></p>
@@ -67,6 +67,5 @@
   &copy; <%= Date.today.year %> Bike Seattle
 </footer>
     
-</body>
-    
+</body> 
 </html>

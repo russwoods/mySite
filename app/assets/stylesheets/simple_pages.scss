@@ -15,23 +15,12 @@ h2 {
 	font-size: 1.5em;
 }
 
-section {
-    padding: 30px 50px;
-}
-
-.header {
-    padding-bottom: 25px;
-}
-.content {
-  padding-top: 70px;
-  padding-bottom: 50px;
-}
 
 
 //Nav
 
 .navbar-brand {
-  text-transform: uppercase;
+	letter-spacing: 1px;
 }
 
 .navbar-nav {
@@ -52,18 +41,8 @@ nav a {
 
 //About
 
-.about-header {
-    line-height: 2.0em;
-}
-
 .about-text {
 	padding-top: 25px;
-}
-
-//Contact
-
-.contact-fields {
-    text-align: center;
 }
 
 //Footer

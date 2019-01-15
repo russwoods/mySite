@@ -6,46 +6,49 @@
 @import "users";
 
 .navbar {
-    border-radius: 0px;
-    padding: 0;
+	border-radius: 0px;
+	padding: 0;
 }
 
 .navbar-brand {
-    padding: 10px 0px 10px 20px;
-    font-size: 2em;
+	padding: 10px 0px 10px 20px;
+	font-size: 2em;
 }
 
 #carousel-images {
-    padding: 10px 20px;
-    margin-bottom: 40px;
+	padding: 10px 20px;
+	margin-bottom: 60px;
 }
 .carousel-caption {
-    color: #000;
-    font-size: 2em;
+	color: #000;
+	font-size: 1.3em;
+	bottom: -20px;
 }
 
 .carousel-indicators {
-    padding-bottom: 30px;
-    width: 70%;
+	bottom: -40px;
 }
 
 .carousel-indicators li {
-    width: 80px;
-    border: 2px solid #000;
-    height: 12px;
-    margin: 0px;
-    padding-right: 2px;
+	width: 80px;
+	border: 1px solid #000;
+	height: 7px;
+	padding-right: 2px;
 }
 
 .carousel-indicators .active {
-    width: 80px;
-    background-color: #ffd101;
+	width: 80px;
+	background-color: #28A745;
 } 
 
+.carousel-control-prev-icon,
 .carousel-control-next-icon {
-    background: #212529;
+	background-color: #443e66;
+	opacity: 0.5;
 }
 
-.carousel-control-prev-icon {
-    background: #212529;
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+	background-color: #443e66;
+	opacity: 1;
 }

@@ -1,4 +1,4 @@
-<div class="col-sm">
+<div class="col-sm" id="product_frame">
 	<%= link_to product do %>  
 		<h2><%= product.name %></h2>
 		<%= image_tag(product.image_url, class: "img-fluid") unless product.image_url.nil? %>
@@ -10,8 +10,8 @@
 	<% end %>  
 
 	<% if current_user && current_user.admin %>
-			<%= link_to 'Edit', edit_product_path(product), class: "btn btn-primary btn-sm" %> 
-			<%= link_to 'Destroy', product, class: "btn btn-danger btn-sm", method: :delete, data: { confirm: 'Are you sure?' } %>
+		<%= link_to 'Edit', edit_product_path(product), class: "btn btn-primary btn-sm" %> 
+		<%= link_to 'Destroy', product, class: "btn btn-danger btn-sm", method: :delete, data: { confirm: 'Are you sure?' } %>
 	<% end %>
 </div><!-- /col -->
 
