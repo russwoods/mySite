@@ -1,21 +1,19 @@
-<h2>Featured Products:</h2>
+<div class="container-fluid">
+<h1>Featured Products:</h1>
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
     
 <!-- indicators -->    
 <ol class="carousel-indicators"> 
-	<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-	<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-	<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-    <% @products.each do |product, index| %> 
-      <li data-target="#carousel-example-generic" data-slide-to="<%= index %>" class="<%= " active" if product == @products.first %>"></li> 
-    <% end %>
+	<% @products.each do |product, index| %> 
+		<li data-target="#carouselExampleIndicators" data-slide-to="<%= index %>" class="<%= " active" if product == @products.first %>"></li> 
+	<% end %>
 </ol> 
     
 <!-- wrapper for slides -->    
   <div class="carousel-inner">
     <% @products.each do |product| %>  
-    <div class="item<%= " active" if product == @products.first %>">
-        <%= image_tag(product.image_url, class: "img-responsive d-block w-100", id: "carousel-images") %>
+    <div class="carousel-item<%= " active" if product == @products.first %>">
+        <%= image_tag(product.image_url, class: "img-responsive d-block w-100 scroll-image", id: "carousel-images") %>
         <div class="carousel-caption d-none d-md-block">
           <%= product.name %>
         </div>
@@ -33,3 +31,4 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
+</div>	
