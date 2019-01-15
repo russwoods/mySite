@@ -1,15 +1,16 @@
-<p id="notice"><%= notice %></p>
-
-<h1 class="header">Products</h1>    
+<p id="notice"><%= notice %></p>   
 
 <div class="container-fluid">
-<% cache(cache_key_for_products) do %>
-    <div class="row">
-      <%= render @products %>
-    </div>
-  <% end %>    
+	<h1 class="header">Products</h1> 	
+		<% cache(cache_key_for_products) do %>
+			<div class="row">
+				<%= render @products %>
+			</div>
+		<% end %>   
+
+		<br>
+		<% if current_user && current_user.admin %>
+			<%= link_to 'New Product', new_product_path, class: "btn btn-success btn-sm" %>
+		<% end %>
 </div>
 
-<br>
-
-<%= link_to 'New Product', new_product_path %>

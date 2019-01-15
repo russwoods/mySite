@@ -51,10 +51,10 @@
 	</div>
 
   <% if signed_in? %>
-  	<%= link_to 'Edit', edit_product_path(@product) %> |
+  	<%= link_to 'Edit', edit_product_path(@product), class: "btn btn-primary btn-sm" %> 
   <% end %>
     
-	<%= link_to 'Back', products_path %>
+	<%= link_to 'Back', products_path, class: "btn btn-primary btn-sm" %>
 
 </section>
 
