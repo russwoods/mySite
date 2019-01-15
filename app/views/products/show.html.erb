@@ -27,7 +27,7 @@
 		</p>
 		<p>
 			<strong>Price:</strong>
-			<%= @product.price %>
+			<%= number_to_currency(@product.price / 1.0)%>
 		</p>
 		<p>
 			<%= form_with(url: '/payments/create') do |form| %>
