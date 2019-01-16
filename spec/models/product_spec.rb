@@ -29,4 +29,5 @@ describe Product do
       expect(@product.highest_rating_comment == 3.0). to be false
     end
   end
+	
 end

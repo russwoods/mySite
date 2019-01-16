@@ -11,4 +11,5 @@ describe Order do
       expect(Order.new(user_id: nil)).to_not be_valid
     end
   end
+	
 end
